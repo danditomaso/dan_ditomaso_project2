@@ -1,0 +1,45 @@
+$primaryColor: #373636;
+$accentColor: #00e1ff;
+
+@mixin primaryFont($size) {
+    font-family: 'Playfair Display', serif;
+    color: $primaryColor;
+    font-size: $size;
+}
+
+@mixin secondaryFont($size) {
+    font-family: 'Monserrat', sans-serif;
+    color: $primaryColor;
+    font-size: $size;
+    text-transform: uppercase;
+}
+
+html {
+    font-size: 62.5;
+}
+
+// typography styles
+
+h1 {
+    // @include primaryFont(50px);
+}
+
+h2 {
+    @include primaryFont(25px);
+}
+h3 {
+    @include secondaryFont(16px);
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 75%;
+}
+li {
+    list-style: none;
+}
+
+section {
+    padding: 75px 0;
+}
