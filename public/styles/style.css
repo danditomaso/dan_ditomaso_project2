@@ -131,11 +131,20 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html,
+body {
+  height: 100%; }
+
 html {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
   border: 0; }
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 80%; }
 
 h1 {
   font-family: 'Oswald', sans-serif;
@@ -177,7 +186,18 @@ h1, h2, h3, h4 {
   letter-spacing: 0.1rem;
   text-align: center;
   line-height: 3.2rem;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.1rem;
+  padding: 1rem 3rem;
+  background: #F38D8D;
+  border: 1px transparent;
+  text-decoration: none;
+  transition: background 0.3s ease, border 0.3s ease; }
+  .btn:hover {
+    background: #F6F6F6;
+    border: 1px solid #F38D8D; }
+
+img {
+  width: 100%; }
 
 p {
   font-family: 'Cabin', sans-serif;
@@ -192,30 +212,11 @@ li {
 section {
   padding: 75px 0; }
 
-.main-header {
-  background: #B9DDE7;
-  height: 65vh;
-  background-size: cover;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .main-header .main-header__content-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-    .main-header .main-header__content-container .main-header__title {
-      margin: 10px 0;
-      margin-left: auto; }
-      .main-header .main-header__content-container .main-header__title::after {
-        content: url(../assets/circle-text.png) no-repeat center; }
-    .main-header .main-header__content-container .main-header__image {
-      margin-right: auto;
-      -webkit-box-shadow: 20px 20px 0px 0px white;
-      -moz-box-shadow: 20px 20px 0px 0px white;
-      box-shadow: 20px 20px 0px 0px white; }
-
 .top-nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background: #B9DDE7;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -233,3 +234,87 @@ section {
       transition: color 0.3s; }
       .top-nav__list .top-nav__item .top-nav__link:hover {
         color: #F38D8D; }
+  .top-nav__list .top-nav__item--larger {
+    font-size: 6rem;
+    align-self: baseline; }
+
+.main-header {
+  background: #B9DDE7;
+  height: 65vh;
+  text-align: center; }
+  .main-header .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: auto;
+    align-items: center;
+    position: relative; }
+  .main-header .main-header__title {
+    margin: 0 75px; }
+    .main-header .main-header__title::after {
+      content: "";
+      background: url(../assets/circle-text.png) no-repeat center/cover;
+      display: block;
+      color: white;
+      right: 0;
+      top: 50%; }
+  .main-header .main-header__image {
+    -webkit-box-shadow: 20px 20px 0px 0px white;
+    -moz-box-shadow: 20px 20px 0px 0px white;
+    box-shadow: 20px 20px 0px 0px white;
+    width: 38%; }
+
+.about {
+  background: #F6F6F6; }
+  .about .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin: auto;
+    position: relative;
+    text-align: left; }
+  .about .about__container {
+    width: 55%; }
+
+.image--break {
+  background: url(../assets/home-image-2.jpg) no-repeat center/cover;
+  min-height: 50vh; }
+
+.services {
+  background: #F6F6F6; }
+  .services .services__list {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 40%; }
+
+.services .services__heading {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  line-height: 0; }
+
+.blog {
+  background: #FFFFFF; }
+
+.blog .blog__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end; }
+  .blog .blog__item .blog__image {
+    flex: 1;
+    width: 30%;
+    box-shadow: 20px 20px 0px 0px #68B0C1, -100px 20px 0 0 #68B0C1;
+    margin-bottom: 40px; }
+  .blog .blog__item .blog__content-container {
+    flex: 1;
+    padding: 2rem;
+    width: 60%; }
+  .blog .blog__item .blog_text {
+    width: 50%; }
+
+.blog .blog-item:nth-of-type(2) {
+  flex-direction: column-reverse; }

@@ -1,0 +1,114 @@
+// Header START 
+.main-header {
+  background: $primaryColor;
+  height: 65vh;
+  text-align: center;
+   .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin: auto;
+      align-items: center;
+      position: relative;
+    }
+    .main-header__title {
+        margin: 0 75px;
+          &::after {
+          content: "";
+          background: url(../assets/circle-text.png) no-repeat center / cover;
+          display: block;
+          color: white;
+          right: 0;
+          top: 50%;
+      }
+    }
+    .main-header__image {
+        -webkit-box-shadow: 20px 20px 0px 0px rgba(255,255,255,1);
+        -moz-box-shadow: 20px 20px 0px 0px rgba(255,255,255,1);
+        box-shadow: 20px 20px 0px 0px rgba(255,255,255,1);
+        width: 38%;
+    }
+      
+}
+// Header END  
+// About START
+.about {
+  background: $whiteShadeColor;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin: auto;
+    position: relative;
+    text-align: left;
+  }
+  .about__container {
+    width: 55%;
+  }
+}
+// About END
+// Image Break START
+.image--break {
+  background: url(../assets/home-image-2.jpg) no-repeat center / cover;
+  // padding: 200px;
+  min-height: 50vh;
+}
+// Image Break END
+// Services START
+.services {
+  background: $whiteShadeColor;
+   .services__list {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 40%;
+    .services__item {
+      }
+    }
+}
+.services .services__heading {
+            display: inline-flex;
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+            line-height: 0;
+            .services__icon-stack {
+            }
+}
+// Services END
+// Blog START
+.blog {
+  background: $whiteSolidColor;
+}
+.blog .blog__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+    .blog__image {
+      flex: 1;
+      width:30%;
+      box-shadow: 20px 20px 0px 0px $greyBlueColor, -100px 20px 0 0 $greyBlueColor ;
+      margin-bottom: 40px;
+    }
+    .blog__content-container {
+      flex: 1;
+      padding: 2rem;
+      width:60%;
+    }
+    .blog_text {
+      width: 50%;
+    }
+}
+
+.blog .blog-item:nth-of-type(2) {
+  flex-direction: column-reverse;
+}
+// Blog END
+
+
+
+         
+
+      

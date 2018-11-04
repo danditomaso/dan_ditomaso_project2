@@ -4,6 +4,7 @@ $blackColor: #171717;
 $greyBlueColor: #68B0C1;
 $duskBlueColor: #227284;
 $whiteShadeColor: #F6F6F6;
+$whiteSolidColor: #FFFFFF;
 
 @mixin primaryFont($size) {
     font-family: 'Oswald', sans-serif;
@@ -18,6 +19,12 @@ $whiteShadeColor: #F6F6F6;
     color: $blackColor;
     font-size: $size;
     line-height: 3.2rem;
+    
+}
+
+html,
+body {
+    height: 100%;
 }
 
 html {
@@ -25,6 +32,12 @@ html {
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 80%;
 }
 
 // typography styles
@@ -52,6 +65,19 @@ h1,h2,h3,h4 {
     text-align: center;
     line-height: 3.2rem;
     letter-spacing: 0.1rem;
+    padding: 1rem 3rem;
+    background: $accentColor;
+    border: 1px transparent;
+    text-decoration: none;
+    transition: background 0.3s ease, border 0.3s ease;
+    &:hover {
+        background: $whiteShadeColor;
+        border: 1px solid $accentColor;
+    }
+}
+
+img {
+    width: 100%;
 }
 
 p {

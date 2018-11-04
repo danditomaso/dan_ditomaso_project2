@@ -1,4 +1,8 @@
     .top-nav__list  {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        background: $primaryColor;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -9,13 +13,17 @@
                     .top-nav__link {
                         text-decoration: none;
                         @include primaryFont(2.0rem);
-                        transition: color 0.3s;
+                         transition: color 0.3s;
                         &:hover {
                         color: $accentColor;
                         }
                     }
             }
-    }
+            .top-nav__item--larger {
+              font-size: 6rem;
+              align-self: baseline;
+            }
+}
 
 
     

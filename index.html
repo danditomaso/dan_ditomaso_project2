@@ -6,79 +6,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Harper - Project 2</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css' integrity='sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz'
+        crossorigin='anonymous'>
     <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="./public/styles/style.css">
 </head>
 
 <body>
+    <nav class="top-nav">
+        <ul class="top-nav__list">
+            <li class="top-nav__item">
+                <a class="top-nav__link" href="#">Home</a>
+            </li>
+            <li class="top-nav__item">
+                <a class="top-nav__link" href="#">About</a>
+            </li>
+            <li class="top-nav__item top-nav__item--larger">
+                <a class="top-nav__link" href="#">Harper</a>
+            </li>
+            <li class="top-nav__item">
+                <a class="top-nav__link" href="#">services</a>
+            </li>
+            <li class="top-nav__item">
+                <a class="top-nav__link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <header class="main-header">
         <div class="wrapper">
-            <nav class="top-nav">
-                <ul class="top-nav__list">
-                    <li class="top-nav__item">
-                        <a class="top-nav__link" href="#">Home</a>
-                    </li>
-                    <li class="top-nav__item">
-                        <a class="top-nav__link" href="#">About</a>
-                    </li>
-                    <li class="top-nav__item top-nav_item--larger">
-                        <a class="top-nav__link" href="#">Harper</a>
-                    </li>
-                    <li class="top-nav__item">
-                        <a class="top-nav__link" href="#">Blog</a>
-                    </li>
-                    <li class="top-nav__item">
-                        <a class="top-nav__link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="main-header__content-container">
-                <div class="main-header__image">
-                    <img src="./public/assets/home-image-1.jpg" alt="" class="main-header__img">
-                </div>
-                <div class="main-header__title-container">
-                    <h1 class="main-header__title">Harper</h1>
-                </div>
+            <div class="main-header__image">
+                <img src="./public/assets/home-image-1.jpg" alt="" class="main-header__img">
+            </div>
+            <div class="main-header__title-container">
+                <h1 class="main-header__title">Harper</h1>
             </div>
         </div>
     </header>
     <main>
-        <section>
-            <div class="about">
-                <h2 class="about__heading">Who's Harper</h2>
-                <p class="about__contents">
+        <section class="about">
+            <div class="wrapper">
+                <div class="about__container">
+                    <h2 class="about__heading">Who's Harper?</h2>
+                    <p class="about__contents">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque fuga minus accusamus?
+                        Repudiandae dolore quaerat maiores perspiciatis iure aut eos corporis ex commodi! Libero ullam
+                        nesciunt ad exercitationem illo.
+                    </p>
                     <a href="" class="btn">Find Out More</a>
-                </p>
-            </div>
-            <div class="section__break">
-            </div>
-            <div class="skills">
-                <ul class="skills__list">
-                    <li class="skills__item"></li>
-                    <li class="skills__item"></li>
-                    <li class="skills__item"></li>
-                    <li class="skills__item"></li>
+                </div>
+        </section>
+        <div class="image--break">
+        </div>
+        <section class="services">
+            <div class="wrapper">
+                <ul class="services__list">
+                    <li class="services__item">
+                        <span class="fa-stack fa-2x services__icon-stack">
+                            <i class="fa fa-circle fa-stack-2x services__icon-1"></i>
+                            <i class="fa fa-image fa-stack-1x fa-inverse services__icon-2"></i>
+                        </span>
+                        <h3 class="services__heading">Photos</h3>
+                        <div class="services__text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quaerat
+                                necessitatibus culpa recusandae non molestias sed illo modi consequuntur animi sit,
+                                voluptatem ducimus, explicabo nam eveniet eligendi? Vitae, in quo.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="services__item">
+                        <span class="fa-stack fa-2x services__icon-stack">
+                            <i class="fa fa-circle fa-stack-2x services__icon-1"></i>
+                            <i class="fa fa-image fa-stack-1x fa-inverse services__icon-2"></i>
+                        </span>
+                        <h3 class="services__heading">Photos</h3>
+                        <div class="services__text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quaerat
+                                necessitatibus culpa recusandae non molestias sed illo modi consequuntur animi sit,
+                                voluptatem ducimus, explicabo nam eveniet eligendi? Vitae, in quo.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="services__item">
+                        <span class="fa-stack fa-2x services__icon-stack">
+                            <i class="fa fa-circle fa-stack-2x services__icon-1"></i>
+                            <i class="fa fa-image fa-stack-1x fa-inverse services__icon-2"></i>
+                        </span>
+                        <h3 class="services__heading">Photos</h3>
+                        <div class="services__text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quaerat
+                                necessitatibus culpa recusandae non molestias sed illo modi consequuntur animi sit,
+                                voluptatem ducimus, explicabo nam eveniet eligendi? Vitae, in quo.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="services__item">
+                        <span class="fa-stack fa-2x services__icon-stack">
+                            <i class="fa fa-circle fa-stack-2x services__icon-1"></i>
+                            <i class="fa fa-image fa-stack-1x fa-inverse services__icon-2"></i>
+                        </span>
+                        <h3 class="services__heading">Photos</h3>
+                        <div class="services__text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quaerat
+                                necessitatibus culpa recusandae non molestias sed illo modi consequuntur animi sit,
+                                voluptatem ducimus, explicabo nam eveniet eligendi? Vitae, in quo.
+                            </p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
-        <section>
-            <div class="blog">
-                <section class="blog__list">
-                    <div class="blog__item">
-                        <div class="blog__image"></div>
-                        <div class="blog__text-container"></div>
-                        <a href="" class="btn">Read More</a>
-                    </div>
-                    <div class="blog__item">
-                        <div class="blog__image"></div>
-                        <div class="blog__text-container"></div>
-                        <a href="" class="btn">Read More</a>
-                    </div>
-                </section>
-            </div>
+        <section class="blog">
+            <!-- <div class="wrapper"> -->
+            <article class="blog__item">
+                <div class="blog__image">
+                    <img src="./public/assets/home-image-3.jpg" alt="">
+                </div>
+                <div class="blog__content-container">
+                    <h3 class="blog__heading">Harpers Travels</h3>
+                    <p class="blog__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque fuga minus
+                        accusamus?
+                        Repudiandae dolore quaerat maiores perspiciatis iure aut eos corporis ex commodi!
+                        Libero
+                        ullam
+                        nesciunt ad exercitationem illo.
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </article>
+            <article class="blog__item">
+                <div class="blog__image">
+                    <img src="./public/assets/home-image-4.jpg" alt="">
+                </div>
+                <div class="blog__content-container">
+                    <h3 class="blog__heading">Favoriate Things</h3>
+                    <p class="blog__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque fuga minus
+                        accusamus?
+                        Repudiandae dolore quaerat maiores perspiciatis iure aut eos corporis ex commodi!
+                        Libero
+                        ullam
+                        nesciunt ad exercitationem illo.
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </article>
+            <!-- </div> -->
         </section>
-        <section>
-            <div class="journey">
+        <section class="journey">
+            <div class="wrapper">
                 <div class="journey__image">
 
                 </div>
