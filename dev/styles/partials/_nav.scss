@@ -1,0 +1,21 @@
+    .top-nav__list  {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+            .top-nav__item {
+                    padding: 20px;
+                    line-height: 2.9rem;
+                    .top-nav__link {
+                        text-decoration: none;
+                        @include primaryFont(2.0rem);
+                        transition: color 0.3s;
+                        &:hover {
+                        color: $accentColor;
+                        }
+                    }
+            }
+    }
+
+
+    

@@ -1,0 +1,68 @@
+$primaryColor: #B9DDE7;
+$accentColor: #F38D8D;
+$blackColor: #171717;
+$greyBlueColor: #68B0C1;
+$duskBlueColor: #227284;
+$whiteShadeColor: #F6F6F6;
+
+@mixin primaryFont($size) {
+    font-family: 'Oswald', sans-serif;
+    color: $blackColor;
+    font-size: $size;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+@mixin secondaryFont($size) {
+    font-family: 'Cabin', sans-serif;
+    color: $blackColor;
+    font-size: $size;
+    line-height: 3.2rem;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+// typography styles
+h1 {
+    @include primaryFont(12rem);
+    line-height: 9.2rem;
+}
+
+h2 {
+    @include primaryFont(4.2rem);
+}
+h3 {
+    @include primaryFont(3.2rem);
+}
+h4 {
+    @include primaryFont(2.4rem);
+}
+
+h1,h2,h3,h4 {
+    text-transform: uppercase;
+}
+
+.btn {
+    @include primaryFont(2.0rem);
+    text-align: center;
+    line-height: 3.2rem;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    @include secondaryFont(2.0rem);
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    padding: 75px 0;
+}
