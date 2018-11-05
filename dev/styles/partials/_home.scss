@@ -13,6 +13,7 @@
     }
     .main-header__title {
         margin: 0 75px;
+        font-size: 15rem;
           &::after {
           content: "";
           background: url(../assets/circle-text.png) no-repeat center / cover;
@@ -27,6 +28,7 @@
         -moz-box-shadow: 20px 20px 0px 0px rgba(255,255,255,1);
         box-shadow: 20px 20px 0px 0px rgba(255,255,255,1);
         width: 38%;
+        margin-top: 20px;
     }
       
 }
@@ -62,20 +64,35 @@
    .services__list {
     display: flex;
     flex-flow: row wrap;
-    flex: 0 0 40%;
-    .services__item {
+    list-style: none;
+    margin: 15px 0;
+      .services__item {
+        flex-basis: calc(50% - 50px);
+        margin-right: 50px;
+        position: relative;
       }
-    }
+   }
+   .services__heading {
+     display: inline-block;
+      line-height: 0;
+   }
+   .services__text {
+    max-width: 85%;
+   }
 }
-.services .services__heading {
-            display: inline-flex;
-            align-content: center;
-            justify-content: center;
-            justify-items: center;
-            line-height: 0;
-            .services__icon-stack {
-            }
-}
+
+.services__icon-stack {
+    position: absolute;
+    top: 5%;
+    left: -12%;
+     .services__icon-1 {
+       color: $primaryColor;
+       font-size: 40px;
+     }
+     .services__icon-2 {
+       color: $blackColor;
+     }
+  }
 // Services END
 // Blog START
 .blog {
@@ -86,16 +103,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+    .blog__content-container {
+      flex: 1;
+      padding: 2rem;
+      width:60%;
+    }
     .blog__image {
       flex: 1;
       width:30%;
       box-shadow: 20px 20px 0px 0px $greyBlueColor, -100px 20px 0 0 $greyBlueColor ;
       margin-bottom: 40px;
-    }
-    .blog__content-container {
-      flex: 1;
-      padding: 2rem;
-      width:60%;
     }
     .blog_text {
       width: 50%;
@@ -106,6 +123,33 @@
   flex-direction: column-reverse;
 }
 // Blog END
+// Journey START
+.journey {
+  background: $whiteSolidColor;
+  &.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+    &.__content-container {
+      flex: 1;
+      padding: 2rem;
+      width:60%;
+    }
+     &__image {
+      flex: 1;
+      width:30%;
+      box-shadow: 20px 20px 0px 0px $greyBlueColor, -100px 20px 0 0 $greyBlueColor ;
+      margin-bottom: 40px;
+    }
+    ._text {
+      width: 50%;
+    }
+
+// Journey END
 
 
 

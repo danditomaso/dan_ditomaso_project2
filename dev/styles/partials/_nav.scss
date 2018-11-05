@@ -7,22 +7,27 @@
         flex-direction: row;
         justify-content: center;
         list-style: none;
+        text-transform: uppercase;
             .top-nav__item {
-                    padding: 20px;
+                    padding: 27px;
                     line-height: 2.9rem;
+                    .top-nav__item--larger {
+                      @include primaryFont(4rem);
+                      &:hover {
+                        color: $whiteShadeColor;
+                      }
+                    }
                     .top-nav__link {
                         text-decoration: none;
                         @include primaryFont(2.0rem);
                          transition: color 0.3s;
                         &:hover {
-                        color: $accentColor;
+                        color: $whiteShadeColor;
                         }
                     }
+                    
             }
-            .top-nav__item--larger {
-              font-size: 6rem;
-              align-self: baseline;
-            }
+          
 }
 
 
