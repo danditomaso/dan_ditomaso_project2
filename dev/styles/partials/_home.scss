@@ -1,7 +1,10 @@
+//*********************
+//HOME FILE
+//*********************
 // Header START 
 .main-header {
   background: $primaryColor;
-  height: 45vh;
+  height: 65vh;
   position: relative;
   &__content-container {
     display: flex;
@@ -9,49 +12,42 @@
     align-items: center;
   }
   &__title-container {
-    align-content: center;
-    // align-items: center;
-    // justify-content: center;
-    font-size: 12rem;
-    flex-direction: row;
+    @include primaryFont(12rem);
+    line-height: 9.2rem;
     position: relative;
       &::after {
-      position: absolute;
+      @include position(absolute, 0, 0, -30px, 0); 
       content: url(../assets/circle-text.png);
       color: white;
-      top: 0;
-      right: -22%;
       }
    }
    &__image {
       -webkit-box-shadow: 15px 15px 0px 0px rgba(255,255,255,1);
       -moz-box-shadow: 15px 15px 0px 0px rgba(255,255,255,1);
       box-shadow: 15px 15px 0px 0px rgba(255,255,255,1);
-      // position: relative;
-      width: 70%;
-      // left: 2vw;
-      // top: -2vh;
+      width: 80%;
    }
 }
 // Header END  
 // About START
 .about {
   background: $whiteShadeColor;
-  &__container {
-  width: 65%;
+  &__content-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    // width: 50%;
   }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-left: auto;
+  &__text {
+    width: 80%;
   }
 }
 // About END
 // Image Break START
 .image--break {
   background: url(../assets/home-image-2.jpg) no-repeat center / cover;
-  // padding: 200px;
   min-height: 50vh;
 }
 // Image Break END
@@ -59,8 +55,8 @@
 .services {
   background: $whiteShadeColor;
   &__heading {
-    display: inline-block;
-    line-height: 0;
+  display: inline-block;
+  line-height: 0;
   }
   &__text {
   max-width: 85%;
@@ -68,7 +64,6 @@
   &__list {
   display: flex;
   flex-flow: row wrap;
-  list-style: none;
   margin: 15px 0;
   }
   &__item {
@@ -77,9 +72,10 @@
   position: relative;
   }
   &__icon-stack {
-  position: absolute;
-  top: 5%;
-  left: -12%;   
+    display: inline-flex;
+    justify-items: flex-start;
+    align-items: flex-start;
+    @include position(absolute, 5%, 0, 0, -12%); 
     &-1 {
     color: $primaryColor;
     font-size: 40px;
@@ -88,75 +84,82 @@
     color: $blackSolidColor;
     }
   }      
-  
 }
 // Services END
 // Blog START
 .blog {
   background: $whiteSolidColor;
-  display: flex;
-  flex-direction: column;
   &__item {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: left;
     &--left {
       flex-direction: row;
+      margin-left: 200px;
     }
     &--right {
-        flex-direction: row-reverse;
-      }
+      flex-direction: row-reverse;
+      margin-right: 200px;
+      margin-top: 40px;
+    }
   }
   &__content-container {
-    padding: 2rem;
-    width: 100%;
-  }
-  &__image-container {
-    // align-self: flex-start;
-    margin-bottom: 40px;
-  }
-  &__text {
-    width: 70%;
-    &--right {
-      // margin-left: auto;
+    &--left {
+      padding-left: 100px;
+      margin-top: 60px;
     }
+    &--right {
+      width: 50%;
+    }
+
   }
   &__image {
-    // display: block;
+    display: block;
     &--left {
-      box-shadow: 15px 15px 0px 0px $greyBlueColor, -200px 15px 0px 0px $greyBlueColor;
-      object-fit: cover;
-      // margin-left: auto;
+      box-shadow: 15px 15px 0px 0px $greyBlueColor, -300px 15px 0px 0px $greyBlueColor;
     }
     &--right {
       box-shadow: 15px 15px 0px 0px $primaryColor, 200px 15px 0px 0px $primaryColor;
     }
   }
-
+  &__text {
+    width: 70%;
+  }
+  .btn__blog--right {
+    text-align: right;
+  }
 }
 // Blog END
 // Journey START
 .journey {
   background: $whiteShadeColor;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   &__image {
-      // max-width: 30%;
       box-shadow: 20px 20px 0px 0px $greyBlueColor;
   }
-  &.__content-container {
-  padding: 2rem;
+  &__content-container {
+  padding-left: 5%;
+  width: 50%;
   }
-  &._text {
-    width: 50%;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
- }
 }
 // Journey END
 // Gallery START
+.gallery {
+  background: $whiteSolidColor;
+  &__list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2rem 0;
+  justify-content: center;
+  flex: 1 0 25%;
+  // border: .5rem solid transparent;
+  }
+  &__image {
+    width: 90%;
+  }
+}
 // Gallery END
 // Copyright START
 .copyright {

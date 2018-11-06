@@ -20,6 +20,14 @@ $whiteSolidColor: #FFFFFF;
     font-size: $size;
     line-height: 3.2rem;
 }
+@mixin position($type, $top, $right, $bottom, $left) { 
+    position: $type; 
+    top: $top; 
+    right: $right; 
+    bottom: $bottom; 
+    left: $left; 
+}
+
 
 html,
 body {
@@ -42,7 +50,7 @@ html {
 
 // typography styles
 h1 {
-    @include primaryFont(12rem);
+    @include primaryFont(8rem);
     line-height: 9.2rem;
 }
 
@@ -70,6 +78,7 @@ h1,h2,h3,h4 {
     border: 1px transparent;
     text-decoration: none;
     transition: background 0.3s ease, border 0.3s ease;
+    text-align: center;
     &:hover {
         background: $whiteShadeColor;
         border: 1px solid $accentColor;
@@ -77,9 +86,9 @@ h1,h2,h3,h4 {
 }
 
 img {
-    width: 100%;
-    max-width: 80%;
-    object-fit: cover;
+    // max-width: 100%;
+    // height: 100%;
+    // object-fit: cover;
 }
 
 p {

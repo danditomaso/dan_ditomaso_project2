@@ -1,0 +1,17 @@
+// Header START 
+.blog-header {
+  background: url(../assets/blog-image-1.jpg) no-repeat center / cover;
+  height: 49vh;
+  position: relative;
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    line-height: -50%;
+    @include position(absolute, 100%, 0, 0, 5%);
+  }
+}
+// Header END  
+// About START
+// Copyright END
