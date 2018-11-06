@@ -1,18 +1,7 @@
-// Header START 
-.header {
-  background: url(../assets/blog-image-1.jpg) no-repeat center / cover;
-  height: 49vh;
-  position: relative;
-  &__title--blog {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    line-height: -55%;
-    @include position(absolute, 100%, 0, 0, 5%);
-  }
-}
-// Header END  
+//*********************
+//BLOG FILE
+//*********************
+  
 //  Main START
 .main {
   background: $whiteShadeColor;

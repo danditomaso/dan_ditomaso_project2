@@ -33,10 +33,33 @@
             </li>
         </ul>
     </nav>
-    <header class="header">
-        <h1 class="header__title--contact">Blog</h1>
+    <header class="secondary-header secondary-header--contact">
+        <h1 class="secondary-header__title">Contact</h1>
     </header>
     <main class="main">
+        <aside class="aside">
+            <div class="wrapper">
+                <div class="aside__content-container">
+                    <ul class="contact-info__social-list">
+                        <li><a href="//facebook.com" target="_blank"><i class="fab fa-facebook-f"></a></i></li>
+                        <li><a href="//instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="//linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="//twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <address class="aside__contact-address">
+                    <div class="wrapper">
+                        <p>
+                            <span>info@email.com</span>
+                            123 - 456 - 7890
+                            123 some road,
+                            Toronto, ON
+                        </p>
+                    </div>
+                </address>
+            </div>
+        </aside>
+
         <form action="#" method="POST" class="contact">
             <label for="name" class="visuallyhidden">Name</label>
             <input type="text" name="name" id="name" class="contact__name" placeholder="Name">
@@ -45,7 +68,7 @@
             <label for="comments" class="visuallyhidden">Comments</label>
             <textarea name="comments" id="comments" cols="30" rows="10" class="contact__comments" placeholder="Comments"></textarea>
             <label for="post" class="visuallyhidden">Post Comment</label>
-            <input type="submit" class="btn" name="post" value="Post Comment" placeholder="Post Comment">
+            <input type="submit" class="btn" name="post" value="Submit" placeholder="Submit">
         </form>
 
         </article>
