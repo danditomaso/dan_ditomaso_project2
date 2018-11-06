@@ -4,7 +4,7 @@
 // Header START 
 .main-header {
   background: $primaryColor;
-  height: 65vh;
+  // height: 45vh;
   position: relative;
   &__content-container {
     display: flex;
@@ -13,35 +13,32 @@
   }
   &__title-container {
     @include primaryFont(12rem);
+    background: url(../assets/circle-text.png);
+    background-repeat: no-repeat;
+    background-position-y: 30%, center;
+    background-position-x: 100%, center;
+    padding: 4rem 8rem;
     line-height: 9.2rem;
     position: relative;
-      &::after {
-      @include position(absolute, 0, 0, -30px, 0); 
-      content: url(../assets/circle-text.png);
-      color: white;
-      }
+    color: white;
    }
    &__image {
       -webkit-box-shadow: 15px 15px 0px 0px rgba(255,255,255,1);
       -moz-box-shadow: 15px 15px 0px 0px rgba(255,255,255,1);
       box-shadow: 15px 15px 0px 0px rgba(255,255,255,1);
       width: 80%;
+      margin-bottom: -100px;
    }
 }
 // Header END  
 // About START
 .about {
   background: $whiteShadeColor;
-  &__content-container {
-  width: 30%;
   display: flex;
-  flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    // width: 50%;
-  }
-  &__text {
-    width: 80%;
+  justify-content: flex-end;
+  &__content-container {
+    
+    width: 40%;
   }
 }
 // About END
@@ -64,11 +61,9 @@
   &__list {
   display: flex;
   flex-flow: row wrap;
-  margin: 15px 0;
   }
   &__item {
   flex-basis: calc(50% - 50px);
-  margin-right: 50px;
   position: relative;
   }
   &__icon-stack {
@@ -125,9 +120,7 @@
   &__text {
     width: 70%;
   }
-  .btn__blog--right {
-    text-align: right;
-  }
+  
 }
 // Blog END
 // Journey START
@@ -153,11 +146,10 @@
   flex-flow: row wrap;
   margin: 2rem 0;
   justify-content: center;
-  flex: 1 0 25%;
-  // border: .5rem solid transparent;
   }
   &__image {
-    width: 90%;
+    width: 30%;
+    margin-right: 2rem;
   }
 }
 // Gallery END

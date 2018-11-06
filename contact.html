@@ -5,52 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact - Project 2</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Harper - Blog - Project 2</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css' integrity='sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz'
+        crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styles/style.css">
 </head>
 
 <body>
-    <header class="second__header">
-        <nav class="top-nav">
-            <ul class="top-nav__list">
-                <li class="top-nav_item"><a class="top-nav_link" href="#">Home</a></li>
-                <li class="top-nav_item"><a class="top-nav_link" href="#">About</a></li>
-                <li class="top-nav_item--larger"><a class="top-nav_link" href="#">Harper</a></li>
-                <li class="top-nav_item"><a class="top-nav_link" href="#">Blog</a></li>
-                <li class="top-nav_item"><a class="top-nav_link" href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="second-header__image">
-            <img src="" alt="" class="second-header__img">
-        </div>
-        <div class="second-header__title-container">
-            <h1 class="second-header__title"></h1>
-        </div>
-    </header>
-    <aside>
-        <ul class="social__list">
-            <li class="social_item"><a href="" class="social__link">Facebook</a>
+    <nav class="top-nav">
+        <ul class="top-nav__list">
+            <li class="top-nav__item">
+                <a class="top-nav__link" href="#">Home</a>
             </li>
-            <li class="social_item"><a href="" class="social__link">Twitter</a></li>
-            <li class="social_item"><a href="" class="social__link">LinkedIn</a></li>
-            <li class="social_item"><a href="" class="social__link">Instagram</a></li>
-        </ul>
-        <address>
-            123 - 456 - 7890
-            123 Queen Street West, Unit 10
-            Toronto, Ontario
-            M5V2D5
-        </address>
+            <li class="top-nav__item">
+                <a class="top-nav__link" href="#">About</a>
+            </li>
+            <li class="top-nav__item">
+                <a class="top-nav__link" href="#"><span class="top-nav__item--larger">Harper</span></a>
 
-    </aside>
-    <main>
-        <form action="#" method="POST" class="form">
-            <input class="form__name" type="text" placeholder="Name" value="name">
-            <input class="form__email" type="email" placeholder="Email Address" value="email">
-            <input class="form__comments" type="text" placeholder="Comment" value="comment" multiple spellcheck>
+            </li>
+            <li class="top-nav__item">
+                <a class="top-nav__link" href="#">Blog</a>
+            </li>
+            <li class="top-nav__item">
+                <a class="top-nav__link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__title--contact">Blog</h1>
+    </header>
+    <main class="main">
+        <form action="#" method="POST" class="contact">
+            <label for="name" class="visuallyhidden">Name</label>
+            <input type="text" name="name" id="name" class="contact__name" placeholder="Name">
+            <label for="email" class="visuallyhidden">Email</label>
+            <input type="email" name="Email" id="email" class="contact__email" placeholder="Email">
+            <label for="comments" class="visuallyhidden">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" class="contact__comments" placeholder="Comments"></textarea>
+            <label for="post" class="visuallyhidden">Post Comment</label>
+            <input type="submit" class="btn" name="post" value="Post Comment" placeholder="Post Comment">
         </form>
-        </form>
+
+        </article>
+
     </main>
+    <footer>
+        <div class="copyright">
+            <p class="copyright__text">Copyright &copy;2018 HackerYou</p>
+        </div>
+    </footer>
 </body>
 
 </html>
