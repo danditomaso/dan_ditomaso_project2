@@ -1,6 +1,6 @@
 $primaryColor: #B9DDE7;
 $accentColor: #F38D8D;
-$blackColor: #171717;
+$blackSolidColor: #171717;
 $greyBlueColor: #68B0C1;
 $duskBlueColor: #227284;
 $whiteShadeColor: #F6F6F6;
@@ -8,7 +8,7 @@ $whiteSolidColor: #FFFFFF;
 
 @mixin primaryFont($size) {
     font-family: 'Oswald', sans-serif;
-    color: $blackColor;
+    color: $blackSolidColor;
     font-size: $size;
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -16,7 +16,7 @@ $whiteSolidColor: #FFFFFF;
 
 @mixin secondaryFont($size) {
     font-family: 'Cabin', sans-serif;
-    color: $blackColor;
+    color: $blackSolidColor;
     font-size: $size;
     line-height: 3.2rem;
 }
@@ -36,7 +36,8 @@ html {
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
-    width: 80%;
+    padding: 0 5%;
+    border: 1px solid orangered;
 }
 
 // typography styles
@@ -77,6 +78,8 @@ h1,h2,h3,h4 {
 
 img {
     width: 100%;
+    max-width: 80%;
+    object-fit: cover;
 }
 
 p {
