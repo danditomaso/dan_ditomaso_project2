@@ -34,6 +34,7 @@
   background: url(../assets/blog-image-1.jpg) no-repeat center / cover;
   height: 49vh;
   position: relative;
+  
   &__title {
     display: flex;
     flex-direction: row;
@@ -47,3 +48,14 @@
   background: url(../assets/contact-image-1.jpg) no-repeat center / cover;
 }
 // Header END 
+@media (max-width: 905px) {
+  .main-header {
+    &__image {
+      display: none;
+    }
+    
+  &__title-container {
+    background: none;    
+    }
+  }
+}
