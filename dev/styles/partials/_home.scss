@@ -2,136 +2,25 @@
 //HOME FILE
 //*********************
   
-// About START
-.about {
-  background: $whiteShadeColor;
-  display: flex;
-  justify-content: flex-end;
-  &__content-container {
-    
-    width: 40%;
-  }
-}
-// About END
+
 // Image Break START
 .image--break {
   background: url(../assets/home-image-2.jpg) no-repeat center / cover;
   min-height: 50vh;
 }
 // Image Break END
-// Services START
-.services {
-  background: $whiteShadeColor;
-  &__heading {
-  display: inline-block;
-  line-height: 0;
-  }
-  &__text {
-  max-width: 85%;
-  }
-  &__list {
-  display: flex;
-  flex-flow: row wrap;
-  }
-  &__item {
-  flex-basis: calc(50% - 50px);
-  position: relative;
-  }
-  &__icon-stack {
-    display: inline-flex;
-    justify-items: flex-start;
-    align-items: flex-start;
-    @include position(absolute, 5%, 0, 0, -12%); 
-    &-1 {
-    color: $primaryColor;
-    font-size: 40px;
-    }  
-    &-2 {
-    color: $blackSolidColor;
-    }
-  }      
-}
-// Services END
-// Blog START
-.blog {
-  background: $whiteSolidColor;
-  &__item {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-    &--left {
-      flex-direction: row;
-      margin-left: 200px;
-    }
-    &--right {
-      flex-direction: row-reverse;
-      margin-right: 200px;
-      margin-top: 40px;
-    }
-  }
-  &__content-container {
-    &--left {
-      padding-left: 100px;
-      margin-top: 60px;
-    }
-    &--right {
-      width: 50%;
-    }
 
-  }
-  &__image {
-    display: block;
-    &--left {
-      box-shadow: 15px 15px 0px 0px $greyBlueColor, -300px 15px 0px 0px $greyBlueColor;
-    }
-    &--right {
-      box-shadow: 15px 15px 0px 0px $primaryColor, 200px 15px 0px 0px $primaryColor;
-    }
-  }
-  &__text {
-    width: 70%;
-  }
-  
-}
-// Blog END
-// Journey START
-.journey {
-  background: $whiteShadeColor;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  &__image {
-      box-shadow: 20px 20px 0px 0px $greyBlueColor;
-  }
-  &__content-container {
-  padding-left: 5%;
-  width: 50%;
-  }
-}
-// Journey END
-// Gallery START
-.gallery {
-  background: $whiteSolidColor;
-  &__list {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 2rem 0;
-  justify-content: center;
-  }
-  &__image {
-    width: 30%;
-    margin-right: 2rem;
-  }
-}
-// Gallery END
+
+
 // Copyright START
 .copyright {
   background: $blackSolidColor;
   width: 100%;
-  padding: 1px 0;
   text-align: center;
   .copyright__text {
     color: $whiteSolidColor;
   }
 }
 // Copyright END
+// Media Queries START
+

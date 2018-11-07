@@ -1,0 +1,41 @@
+// Blog Articles START
+.blog {
+  background: $whiteSolidColor;
+  &__item {
+    &--left {
+      
+    }
+    &--right {
+      
+    }
+ }
+.blog__image {
+    width: 45%;
+    margin-right: 100px;
+    display: inline-block;
+ }
+.blog__image:nth-child(1) {
+box-shadow: 15px 15px 0px 0px $greyBlueColor, -460px 15px 0px 0px $greyBlueColor;
+
+
+}
+.blog__image:nth-child(2) {
+box-shadow: 15px 15px 0px 0px $primaryColor, 485px 15px 0px 0px $primaryColor;
+margin-top: 50px;
+    .btn {
+    }
+}
+.blog__content {
+ width: 45%;
+ display: inline-block;
+}
+}
+
+@media (max-width: 1054px) {
+    .blog__image:nth-child(1) {
+    box-shadow: 15px 15px 0px 0px $greyBlueColor;
+    }
+    .blog__image:nth-child(2) {
+    box-shadow: 15px 15px 0px 0px $primaryColor;
+    }
+} 

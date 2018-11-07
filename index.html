@@ -16,24 +16,24 @@
     <nav class="top-nav">
         <ul class="top-nav__list">
             <li class="top-nav__item">
-                <a class="top-nav__link" href="#">Home</a>
+                <a class="top-nav__link" href="./index.html#home">Home</a>
             </li>
             <li class="top-nav__item">
-                <a class="top-nav__link" href="#">About</a>
+                <a class="top-nav__link" href="./index.html#about">About</a>
             </li>
             <li class="top-nav__item">
                 <a class="top-nav__link" href="#"><span class="top-nav__item--larger">Harper</span></a>
 
             </li>
             <li class="top-nav__item">
-                <a class="top-nav__link" href="#">Blog</a>
+                <a class="top-nav__link" href="./blog.html#blog">Blog</a>
             </li>
             <li class="top-nav__item">
-                <a class="top-nav__link" href="#">Contact</a>
+                <a class="top-nav__link" href="./contact.html#contact">Contact</a>
             </li>
         </ul>
     </nav>
-    <header class="main-header">
+    <header class="main-header" id="home">
         <div class="main-header__content-container">
             <div class="main-header__image-container">
                 <img src="./public/assets/home-image-1.jpg" alt="" class="main-header__image">
@@ -44,16 +44,17 @@
         </div>
     </header>
     <main>
-        <section class="about">
-            <div class="about__content-container">
-                <h2>Who's Harper?</h2>
-                <p class="about__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque fuga minus accusamus?
-                    Repudiandae dolore quaerat maiores perspiciatis iure aut eos corporis ex commodi! Libero ullam
-                    nesciunt ad exercitationem illo.
-                </p>
-                <a href="#" class="btn">Find Out More</a>
-
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="about__content-container">
+                    <h2>Who's Harper?</h2>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque fuga minus accusamus?
+                        Repudiandae dolore quaerat maiores perspiciatis iure aut eos corporis ex commodi! Libero ullam
+                        nesciunt ad exercitationem illo.
+                    </p>
+                    <a href="#" class="btn">Find Out More</a>
+                </div>
             </div>
         </section>
         <div class="image--break">
@@ -120,68 +121,60 @@
                 </ul>
             </div>
         </section>
+
         <section class="blog">
-            <article class="blog__item blog__item--left">
-                <figure class="blog__image blog__image--left">
-                    <img src="./public/assets/home-image-3.jpg" alt="">
-                </figure>
-                <div class="blog__content-container blog__content-container--left">
-                    <h3>Harpers Travels</h3>
-                    <p class="blog__text blog__text--left">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque fuga minus
-                        accusamus?
-                        Repudiandae dolore quaerat maiores perspiciatis iure aut eos corporis ex commodi!
-                        Libero
-                        ullam
-                        nesciunt ad exercitationem illo.
-                    </p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </article>
-            <article class="blog__item blog__item--right">
-                <figure class="blog__image blog__image--right">
-                    <img src="./public/assets/home-image-4.jpg" alt="">
-                </figure>
-                <div class="blog__content-container blog__content-container--right">
-                    <h3>Favorite Things</h3>
-                    <p class="blog__text blog__text--right">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque fuga minus
-                        accusamus?
-                        Repudiandae dolore quaerat maiores perspiciatis iure aut eos corporis ex commodi!
-                        Libero
-                        ullam
-                        nesciunt ad exercitationem illo.
-                    </p>
-                    <a href="#" class="btn btn__blog--right">Read More</a>
-                </div>
-            </article>
+            <div class="wrapper">
+                <article class="blog__item">
+                    <img src="./public/assets/home-image-3.jpg" class="blog__image" alt="">
+                    <div class="blog__content">
+                        <h3>Harpers Travels</h3>
+                        <p class="blog__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque fuga minus
+                            accusamus?
+                            Repudiandae dolore quaerat maiores perspiciatis iure aut eos corporis ex commodi!
+                            Liberof
+                            ullam
+                            nesciunt ad exercitationem illo.
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </article>
+                <article class="blog__item">
+                    <div class="blog__content">
+                        <h3>Favorite Things</h3>
+                        <p class="blog__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque fuga minus
+                            accusamus?
+                            Repudiandae dolore quaerat maiores perspiciatis iure aut eos corporis ex commodi!
+                            Libero
+                            ullam
+                            nesciunt ad exercitationem illo.
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                    <img src="./public/assets/home-image-4.jpg" class="blog__image" alt="">
+                </article>
+            </div>
         </section>
+        </div>
         <section class="journey">
-            <figure class="journey__image">
-                <img src="./public/assets/home-image-5.jpg" alt="">
-            </figure>
-            <div class="journey__content-container">
-                <h2>Harper's Journey</h2>
-                <p class="journey__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse dolorem eos nam atque illo
-                    consectetur vitae numquam id velit, ducimus, distinctio error amet ullam totam reiciendis,
-                    maiores similique dolore cumque?
-                </p>
-                <a href="#" class="btn">Find Out More</a>
-            </div>
+            <div class="wrapper journey-flex">
+                <img src="./public/assets/home-image-5.jpg" class="journey__image" alt="">
+                <div class="journey__content">
+                    <h2>Harper's Journey</h2>
+                    <p class="journey__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse dolorem eos nam atque illo
+                        consectetur vitae numquam id velit, ducimus, distinctio error amet ullam totam reiciendis,
+                        maiores similique dolore cumque?
+                    </p>
+                    <a href="#" class="btn">Find Out More</a>
+                </div>
             </div>
         </section>
-        <section class="gallery">
-            <ul class="gallery__list">
-                <li class="gallery__list-item">
-                    <figure class="gallery__image"><img src="./public/assets/home-image-6.jpg" alt=""></figure>
-                </li>
-                <li class="gallery__list-item">
-                    <figure class="gallery__image"><img src="./public/assets/home-image-7.jpg" alt=""></figure>
-                </li>
-                <li class="gallery__list-item">
-                    <figure class="gallery__image"><img src="./public/assets/home-image-8.jpg" alt=""></figure>
-                </li>
+        <section class="gallery wrapper">
+            <img src="./public/assets/home-image-6.jpg" class="gallery__image" alt="">
+            <img src="./public/assets/home-image-7.jpg" class="gallery__image" alt="">
+            <img src="./public/assets/home-image-8.jpg" class="gallery__image" alt="">
             </ul>
         </section>
     </main>

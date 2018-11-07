@@ -1,0 +1,26 @@
+// Services START
+.services {
+  background: $whiteShadeColor;
+  &__text {
+  max-width: 85%;
+  }
+  &__list {
+  display: flex;
+  flex-flow: row wrap;
+  }
+  &__item {
+  flex-basis: calc(50% - 50px);
+  margin-right: 50px;
+  position: relative;
+  }
+  &__icon-stack {
+    @include position(absolute, 0, 0, 0, -22%); 
+    &-1 {
+    color: $primaryColor;
+    }  
+    &-2 {
+    color: $blackSolidColor;
+    }
+  }      
+}
+// Services END

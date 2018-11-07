@@ -1,0 +1,14 @@
+// About START
+.about {
+  background: $whiteShadeColor;
+  display: flex;
+  flex-direction: row;
+  &__content-container {
+    margin-left: auto;
+  }
+  &__text {
+    width: 40%;
+    // margin-left: auto;
+  }
+}
+// About END
