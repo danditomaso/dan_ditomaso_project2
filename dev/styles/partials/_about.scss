@@ -3,10 +3,16 @@
   background: $whiteShadeColor;
   &__flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
-    margin-right: 30%;
+    flex-wrap: wrap;
+    // margin-right: 30%;
+    margin-left: 45%;
+    h2, p {
+      width: 100%;
+    }
   }
+  
   &__content {
     justify-self: flex-start;
   }

@@ -13,16 +13,20 @@
 }
 //  Main END
 //  Aside START
-.aside {
+.aside__blog {
   background: $whiteSolidColor;
   align-self: flex-start;
   display: flex;
-  flex-direction: column;
-  width: 25vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 20%;
   margin-top: 5%;
   &__image {
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
+    img {
+      width: 100%;
+    }
   } 
 }
 // Aside END
@@ -51,7 +55,9 @@
     flex-direction: row;
     align-items: center;
     border-bottom: 7px solid $duskBlueColor;
-
+    &__comment:nth-last-of-type() {
+      
+    }
     &-image {
       align-self: flex-start;
       margin-top: 2rem;

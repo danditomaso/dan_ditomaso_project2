@@ -1,75 +1,77 @@
 // Services START
 .services {
   background: $whiteShadeColor;
-  &__flex {
-
-  }
   &__text {
-  max-width: 85%;
+    max-width: 85%;
+    padding-left: calc(10% + 2rem);
+    p{
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.75rem;
+    }
   }
   &__list {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
+  padding: 0;
   }
   &__item {
   flex-basis: calc(50% - 50px);
-  margin-right: 50px;
   position: relative;
   display: inline-block;
   font-weight: 900;
+  display: flex;
+  flex-wrap: wrap;
+  order: 2;
+  h3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &:before{
+      color: $blackSolidColor;
+      font-family: 'Font Awesome\ 5 Free';
+      font-size: 2rem;
+      z-index: 0;
+      height: 5rem;
+      width: 5rem;
+      margin-right: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // @include position(absolute, 0, 0, 0, -60px); 
+      background-color: $primaryColor;
+    }
+  }
+  &:nth-child(odd){
+    margin-right: 50px;
+  }
 }
 
 &__item::before {
   // Circle font awesome
-  color: $primaryColor;
-  content: "\f111";
-  font-family: 'Font Awesome\ 5 Free';
-  font-size: 8rem;
-  z-index: 1;
-  position: relative;
-  @include position(relative, -60%, 0, 0, -15%); 
+  // color: $primaryColor;
+  // content: "\f111";
+  // font-family: 'Font Awesome\ 5 Free';
+  // font-size: 8rem;
+  // z-index: 1;
+  // position: relative;
+  // @include position(relative, -60%, 0, 0, -15%); 
   
 }
   
-  &__item--photo::after {
-    color: $blackSolidColor;
+  &__item--photo h3:before {
     content: "\f03e";
-    font-family: 'Font Awesome\ 5 Free';
-    font-size: 5rem;
-    z-index: 10;
-    @include position(absolute, 0, 0, 0, -60px); 
   }
-   &__item--photo::after {
-    color: $blackSolidColor;
-    content: "\f03e";
-    font-family: 'Font Awesome\ 5 Free';
-    font-size: 5rem;
-    z-index: 10;
-    @include position(absolute, 0, 0, 0, -60px); 
-  }
-   &__item--user::after {
-    color: $blackSolidColor;
+  &__item--user h3:before {
     content: "\f007";
-    font-family: 'Font Awesome\ 5 Free';
-    font-size: 5rem;
-    z-index: 10;
-    @include position(absolute, 0, 0, 0, -60px); 
   }
-   &__item--tv::after {
-    color: $blackSolidColor;
+  &__item--tv h3:before {
     content: "\f26c";
-    font-family: 'Font Awesome\ 5 Free';
-    font-size: 5rem;
-    z-index: 10;
-    @include position(absolute, 0, 0, 0, -60px); 
   }
-   &__item--phone::after {
-    color: $blackSolidColor;
+  &__item--phone h3:before {
     content: "\f095";
-    font-family: 'Font Awesome\ 5 Free';
-    font-size: 5rem;
-    z-index: 10;
-    @include position(absolute, 0, 0, 0, -60px); 
   }
 }
 // Services END
@@ -87,11 +89,10 @@
   // display: inline-block;
   font-weight: 900;
   margin-left: 3rem;
-
- }
- &__item::after {
-   font-size: 4rem;
-  @include position(absolute, 0, 0, 0, -8.5%); 
- }
- }
+  }
+  &__item::after {
+    font-size: 4rem;
+    @include position(absolute, 0, 0, 0, -8.5%); 
+  }
+  }
 }
